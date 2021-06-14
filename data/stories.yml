@@ -1,0 +1,109 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: how are you
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wie_gehts
+  - action: utter_wiegehts
+
+- story: safe
+  steps:
+  - intent: safe
+  - action: utter_safe
+  
+
+- story: greet+safe+def
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: safe
+  - action: utter_safe
+
+- story: greet+safe+registration
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: safe_ask_registration
+  - action: utter_safe_reg
+
+- story: greet+safe+rolle
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: safe_ask_rolle
+  - action: utter_safe_rolle
+
+- story: greet+antragdef
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wreg_ask_def
+  - action: utter_wreg
+
+- story: antragdef
+  steps:
+  - intent: wreg_ask_def
+  - action: utter_wreg
+
+- story: greet+antragreg
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wreg_ask_antrag
+  - action: utter_antrag
+
+- story: greet+antragsign
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wreg_ask_sign
+  - action: utter_sign
+
+- story: greet+antragrights
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wreg_ask_rights
+  - action: utter_right
+
+- story: greet+bebpo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: beBPo
+  - action: utter_bebpo
+
+ 
+
+
+  

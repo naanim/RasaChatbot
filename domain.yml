@@ -1,0 +1,137 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- wie_gehts
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- registration_process
+- safe
+- safe_ask_def
+- safe_ask_registration
+- safe_ask_role
+- safe_ask_admin
+- safe_ask_IDadmin
+- safe_ask_rights
+- zertifikat
+- zertfikat_ask_format
+- zertifikat_ask_beziehen
+- zertifikat_ask_import
+- zertifikat_ask_importProblem
+- wreg_ask_def
+- wreg_ask_antrag
+- wreg_ask_sign
+- wreg_ask_rights
+- wreg_ask_twoappls
+- beBPo
+- ask_rights
+- safe_ask_rolle
+- ask_antrag
+- ask_sign
+- ask_def
+- wreg_ask_antragname
+- wreg_ask_antragbetreff
+responses:
+  utter_greet:
+  - text: Hallo! Wie kann ich Ihnen weiterhelfen?
+  utter_wiegehts:
+  - text: Mir geht's super! Vielen Dank
+  utter_safe:
+  - text: SAFE (Secure Access to Federated e-Justice / e-Government) ist ein elektronisches
+      Identitätsmanagement für eJustice und eGovernment. Mit der einmaligen Registrierung
+      im SAFE-System kann ist anschließend eine Freischaltung für verschiedene Fachanwendungen
+      möglich. Hierzu hinterlegt man seine persönlichen Anmeldedaten und wählt die
+      Rollen der Fachanwendungen aus. Ein so genannter Identitätsadministrator schaltet
+      den Nutzer dann jeweils für eine Fachanwendung frei. Fortan kann man sich mit
+      diesen Anmeldedaten an verschiedenen Fachanwendungen (z. B. Wettbewerbsregister,
+      Zentrales Testamentsregister, Vollstreckungsportal) anmelden.
+  utter_safe_reg:
+  - text: In SAFE kann sich derjenige registrieren lassen, der vom Antragsteller für
+      die Aufgabe des Identitätsadministrator bzw. des Nutzers benannt wurde. Der
+      Zugriff auf eine Fachanwendung kann auf bestimmte Antragsteller beschränkt sein.
+  utter_safe_rolle:
+  - text: Eine Rolle beschreibt die einem Mitarbeiter zugewiesene Aufgabe in einem
+      Prozess. Die Rolle in SAFE setzt sich aus dem „Rollentyp“ und dem „Rollenwert“
+      zusammen. • Der Rollentyp gibt die Anwendung an, auf die sich die Rolle bezieht
+      (z. B. SAFE –Administratorenrolle für SAFE). • Der Rollenwert beschreibt die
+      Rechtegruppen innerhalb dieses Rollentyps (z. B. Zugangsadministrator, Identitätsadministrator,
+      Nutzer). Ein Mitarbeiter kann mehrere Rollentypen und zu jedem Rollentyp mehrere
+      Rollenwerte besitzen. Es ist möglich, dass ein Rollentyp für mehrere Anwendungen
+      genutzt wird.
+  utter_zertifikat:
+  - text: Ein digitales Zertifikat ist ein digitaler Datensatz. Es bestätigt Eigenschaften
+      von Personen oder Objekten und dessen Authentizität und Integrität. Dies kann
+      durch kryptografische Verfahren geprüft werden. Die Ausstellung des Zertifikats
+      erfolgt durch eine Vertrauensstelle.
+  utter_zertifikat_format:
+  - text: Sie benötigen ein Zertifikat für eine elektronische Signatur. Von SAFE werden
+      folgende Zertifikatsformate unterstützt - CER - PEM - CRT - DER
+  utter_zertifikat_where:
+  - text: Für bis zu drei Identitätsadministratoren einer Organisation können nach
+      der Registrierung in SAFE bei der Bundesnotarkammer Zertifikate kostenfrei heruntergeladen
+      werden. Das Vorgehen ist in allen Einzelschritten im Leitfaden Identitätsadministratoren
+      beschrieben.
+  utter_wreg:
+  - text: Das Wettbewerbsregister (umgangssprachlich auch „Korruptionsregister“) ist
+      eine bundesweite elektronische Datenbank, in der zum Schutz des fairen Wettbewerbs
+      um öffentliche Aufträge und Konzessionen die Unternehmen eingetragen werden,
+      denen Korruptionsdelikte und andere Wirtschaftsstraftaten zugerechnet werden
+      können. Das elektronische Register wird vom Bundeskartellamt (BKartA) aufgebaut
+      und geführt.
+  utter_antrag:
+  - text: 1. Auftraggeber benennt oder registriert bis zu drei Bediensteten als Identitätsadministratoren
+      über das Registrierungssystem SAFE 2. Die Registerbehörde übermittelt den Registrierungsantrag
+      an die Behörden oder Körperschaft des öffentlichen Rechts für die Überprüfung
+      durch das beBPo 3. Behörden oder Körperschaft des öffentlichen Rechts authentifizieren
+      und bestätigen die Eigenschaft des Antragssteller als Auftraggeber 4. Der Identitätsadministrator
+      übernimmt dann beim Auftraggeber die Freischaltung und Verwaltung der Nutzer
+      für die Abfragen
+  utter_sign:
+  - text: Bei einer Übersendung des ausgefüllten Antragsformulars mittels beBPo ist
+      eine Unterschrift nicht erforderlich.
+  utter_right:
+  - text: Der Öffentliche Auftraggeber, der ein eigenes beBPo hat bzw. zur Einrichtung
+      eines beBPo berechtigt ist, schickt den ausgefüllten Antrag über sein beBPo
+      an das beBPo „Bundeskartellamt Wettbewerbsregister“. Der Öffentliche Auftraggeber,
+      der  nicht zur Einrichtung eines beBPo berechtigt ist, bittet die öffentlich-rechtliche
+      Körperschaft, von der sich Eigenschaft als Öffentlicher Auftraggeber ableitet,
+      den Registrierungsantrag über deren beBPo an das Wettbewerbsregister zu versenden.
+  utter_bebpo:
+  - text: Das besondere elektronische Behördenpostfach (beBPo) beruht auf der Infrastruktur
+      des Elektronischen Gerichts- und Verwaltungspostfachs (EGVP) und wird als sicherer
+      Übermittlungsweg u. a. für die elektronische Kommunikation mit den Gerichten
+      genutzt. Bei Nutzung des beBPo kann auf die Anbringung von qualifizierten elektronischen
+      Signaturen verzichtet werden.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, how can i help You?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_registration:
+  - text: please click on this link https://www.bundeskartellamt.de/DE/Wettbewerbsregister/FragenundAntworten/FragenundAntworten_node.html
+actions:
+- utter_greet
+- utter_wiegehts
+- utter_goodbye
+- utter_safe
+- utter_safe_rolle
+- utter_safe_reg
+- utter_zertifikat
+- utter_zertifikat_format
+- utter_zertifikat_where
+- utter_wreg
+- utter_antrag
+- utter_sign
+- utter_right
+- utter_bebpo

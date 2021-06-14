@@ -1,0 +1,226 @@
+version: "2.0"
+
+nlu:
+## intent: greet
+    - hey
+    - hello
+    - hallo
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - whatsup
+    - sup
+    - howdy
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+## intent: goodbye
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - ciao
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+## intent: wie_gehts
+    - wie geht's dir?
+    - alles gut?
+    - wie geht es dir?
+    - und dir?
+
+## intent: affirm
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ja
+  
+
+## intent: deny
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nein
+
+    
+
+## intent: mood_great
+    - gut
+    - fine
+    - super
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+## intent: mood_unhappy
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - traurig
+    - nicht gut
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+
+## intent: safe
+    - Safe
+    - Was ist SAFE?
+    - Was bedeutet SAFE?
+
+## intent: safe_ask_registration
+    - Wer kann sich in SAFE registrieren?
+    - Wer ist erlaubt sich in SAFE zu registrieren?
+    - Wer hat Zugriff auf eine SAFE Registrierung?
+    - Wer darf sich in SAFE registrieren?
+
+## intent: safe_ask_role
+    - Was ist eine Rolle in SAFE?
+    - Was bedeutet Rolle in SAFE?
+    - Was ist ein RollenTyp?
+    - Was ist ein Rollenwert?
+
+## intent: safe_ask_admin
+    - Welche Rechte hat ein Administrator?
+    - Administrator Rechte
+    - Rechte von Administrator
+
+## intent: safe_ask_IDadmin
+    - Welche Rechte hat ein Identitäadministrator?
+    - Identitätsadministrator Rechte
+    - Rechte von Identitätsadministrator
+
+## intent: safe_ask_rights
+    - Welche Rechte hat ein Nutzer?
+    - Nutzer Rechte
+    - Rechte von Nutzer
+
+## intent: zertifikat
+    - Was ist ein Zertifikat?
+    - Zertifikat
+    - Wofür benötigt man ein Zertifikat?
+    - Wieso braucht man ein Zertifikat?
+
+## intent: zertfikat_ask_format
+    - Welche Zertifikate kann ich für die SAFE-Registrierung nutzen?
+    - Welche Zertifikate sind für die SAFE-Registrierung geeignet?
+    - Welches Zertifikatformat ist unterstützt?
+    - Zertifikatformat
+
+## intent: zertifikat_ask_beziehen
+    - Woher kann ich ein Zertifikat beziehen?
+    - Wo kann ich ein Zertifikat herunterladen?
+    - Wie erhalte ich ein Zertifikat?
+    - Wie bekomme ich ein Zertifikat?
+    - Zertifikat erhalten
+
+## intent: zertifikat_ask_import
+    - Wie binde ich ein Zertifikat ein?
+    - Zertifikat importieren
+    - Wie importiere ich ein Zertifikat?
+    - Wie lade ich ein Zertifikat hoch?
+    - Zertifikat hochladen
+
+## intent: zertifikat_ask_importProblem
+    - Zertifikat bindet bei SAFE nicht ein
+    - Wieso kann ich mein Zertifikat nicht bei SAFE hochladen?
+    - Zertifikat lädt nicht hoch
+    - Zertifikat kann nicht importiert werden
+
+
+    ## wie kann ich abfragen
+## intent: wreg_ask_def
+    - was ist das Wettbewerbsregister
+    - was ist ein Wettbewerbsregister
+    - Wettbewerbsregister
+    - wettberwerbsregister
+
+## intent: wreg_ask_antrag
+    - Wettberwerbsregister Antrag
+    - Antrag
+    - beantragen
+    - Wie kann ich mich für das Wettbewerbsregister registrieren
+    - Beantragung 
+    - Beantragung für Wettbewerbsregister
+    - Wie kann ich mich im Wettbewerbsregister registrieren?
+    - registrieren
+
+## intent: wreg_ask_sign
+    - muss ich unterschreiben?
+    - unterschreiben
+    - unterschreiben
+    - ist eine Unterschrift benötigt
+    - antrag Unterschrift
+
+## intent: wreg_ask_rights
+    - Wer kann einen Registrierungsantrag an das Wettbewerbsregister senden
+    - Wer kann sich registrieren?
+    - Wer ist erlaubt im Wettbewerbsregister zu registrieren?
+    - Wer kann Antrag stellen
+
+## intent: wreg_ask_twoappls
+    - Warum gibt es zwei unterschiedliche Registrierungsanträge
+    - Warum gibt es 2 unterschiedliche Registrierungsanträge
+    - Warum gibt es zwei verschiedene Registrierungsanträge
+    - Warum gibt es 2 verschiedene Registrierungsanträge
+    - Wieso gibt es zwei unterschiedliche Registrierungsanträge
+    - Wieso gibt es 2 unterschiedliche Registrierungsanträge
+    - Wieso gibt es zwei verschiedene Registrierungsanträge
+    - Wieso gibt es 2 verschiedene Registrierungsanträge
+
+## intent: wreg_ask_antragbetreff
+    - Warum darf im Betreff der beBPo-Nachricht nur "Registrierung" stehen?
+    - Warum darf im Betreff nur "Registrierung" stehen
+    - Betreff
+
+## intent: wreg_ask_antragname
+    - Warum muss der Registrierungsantrag unter einem bestimmten Namen abgespeichert werden
+    - Wieso muss der Registrierungsantrag unter einem bestimmten Namen abgespeichert werden
+
+## intent: beBPo
+    - Was ist das beBPo
+    - Was ist ein beBPo
+    - was bedeuted beBPo
+    - beBPo
+    - Bebpo
+    - bebPo
+    - beBPO
+    - BEBPO
+   
+## intent: bot_challenge
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
